@@ -1,0 +1,10 @@
+{
+  "custom.rooster_sound": {
+    "sounds": [
+      {
+        "name": "sounds/rooster-sound",
+        "stream": true
+      }
+    ]
+  }
+}

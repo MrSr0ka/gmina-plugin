@@ -1,0 +1,25 @@
+name: GminaRP
+main: org.gminaRp.Main
+version: 1.0
+api-version: 1.21
+commands:
+  gmina:
+    description: Komendy gminy
+    usage: /gmina <subkomenda>
+    aliases: [ g ]  # Opcjonalne aliasy
+    permission: gmina.use
+    permission-message: "Nie masz uprawnień do używania tej komendy!"
+permissions:
+  gmina.use:
+    description: "Pozwala na użycie komendy /gmina"
+    default: true  # This allows all players to use basic /gmina commands
+  gmina.soltys.new:
+    description: "Pozwala na ręczne wybranie nowego Sołtysa"
+    default: op  # Only players with 'op' by default can assign a new Sołtys
+  gmina.soltys.retire:
+    description: "Pozwala na rezygnację z bycia Sołtysem"
+    default: true  # All players can use this command if they are Sołtys
+  gmina.buy.sakwa:
+    description: "Daje sakwę graczowi"
+    default: true  # All players can use this command if they are Sołtys
+
